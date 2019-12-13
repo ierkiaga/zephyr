@@ -1,0 +1,16 @@
+if BOARD_XILINX_ZCU102_BOARD
+
+config BOARD
+	default "xilinx_zcu102_board"
+
+config BUILD_OUTPUT_STRIPPED
+	def_bool y
+
+config FLASH_SIZE
+	int
+	default 64
+
+config FLASH_BASE_ADDRESS
+	default 0x08000000
+
+endif

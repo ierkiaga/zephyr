@@ -1,0 +1,4 @@
+config BOARD_XILINX_ZCU102_BOARD
+	bool "Xilinx ZynqMP ZCU102 Board"
+	depends on SOC_XILINX_ZYNQMP
+	select DISABLE_TCM_ECC

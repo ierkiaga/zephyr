@@ -1,0 +1,16 @@
+identifier: xilinx_zcu102_board
+name: XILINX-ZCU102-BOARD
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gccarmemb
+ram: 64
+testing:
+  ignore_tags:
+   - nmi
+   - benchmark
+   - interrupt
+   - bluetooth
+   - socket
+   - crypto
